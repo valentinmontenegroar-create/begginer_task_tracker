@@ -1,0 +1,88 @@
+# Task Tracker
+
+A simple command-line Task Tracker built with Python.
+
+This project was developed as part of the Task Tracker challenge from the Roadmap.sh beginners projects.
+It allows users to create, manage, update, and persist tasks through a simple terminal interface while following an object-oriented design.
+
+## Features
+
+* Create new tasks
+* Update existing tasks
+* Delete tasks
+* Mark tasks as:
+
+  * To Do
+  * In Progress
+  * Done
+
+* Search tasks by ID
+* List all tasks
+* Filter tasks by status
+* Save and load tasks automatically using JSON
+* Basic unit tests with `unittest`
+
+## Project Structure
+
+```
+task_tracker/
+│
+├── main.py          # Entry point
+├── logics.py        # Core application logic
+├── interface.py     # User interface
+├── storage.py       # JSON persistence
+├── task.py          # Task model
+├── search.py        # Search utilities
+├── test_main.py     # Unit tests
+├── test_storage.py  # Unit tests
+```
+
+The project follows a simple separation of responsibilities:
+
+* Interface handles user interaction.
+* Logic manages application behavior.
+* Storage is responsible for loading and saving data.
+
+## Requirements
+
+* Python 3.12 or later
+
+No external libraries are required.
+
+## How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/task-tracker.git
+```
+
+Go to the project directory:
+
+```bash
+cd task_tracker
+```
+
+Run the application:
+
+```bash
+python main.py
+```
+
+## Running the Tests
+
+Execute:
+
+```bash
+python -m unittest
+```
+
+or
+
+```bash
+python -m unittest discover
+```
+
+depending on your environment.
+
+
